@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-size: 82%;
+    box-shadow: inset 2px 2px 60px rgb(238, 236, 236),
+    inset 2px 2px 60px rgb(238, 236, 236);
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+}
+.accueil {
+    margin-top: 5vh;
+    height: 90vh;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.lien {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 2px 2px 8px black;
+    margin: 0 20px 0 20px;
+    color: rgb(245, 242, 242);
+    text-shadow: 2px 2px 10px rgb(10, 10, 10),
+    -2px -2px 10px rgb(10, 10, 10);
+    text-align: center;
+    transition: .2s ease; 
+    width: 40vw;
+    height: 20vh;
+    z-index: 2;
+}
+.lien:first-child {
+    background: url(media/img/chantier_rose/SCAN0021.JPG);
+    background-position: center;
+}
+.lien:nth-child(2) {
+    background: url(media/img/CREDIT_ADRIEN_FERRON_operation_genara/-OP-Genara-1578.JPG);
+    background-position: center;
+}
+.lien:nth-child(3) {
+    background: url(media/img/CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/adrien_ferron_photographie-019.jpg);
+    background-position: top;
+}
+.lien:nth-child(4) {
+    background: url(media/img/Durant_une_des_Transmanches_2010/SCAN00717.jpg);
+    background-position: center;
+}
+.lien:nth-child(5) {
+    background: url(media/img/grutage_rose/SCAN0030.JPG);
+    background-position: center;
+}
+.lien:nth-child(6) {
+    background: url(media/img/la_rose_vogue/SCAN00418.jpg);
+    background-position: bottom;
+}
+@keyframes mouv {
+    from {
+        background-position: bottom;
+    }
+    to {
+        background-position: top;
+    }
+}
+img {
+    object-fit: contain;
+    max-width: 40%;
+    width: auto;
+    margin: 2%;
+    height: auto;
+    box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+    -moz-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+    transition: 1s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.lien:hover {
+    width: 39.9vw;
+    filter: saturate(2);
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    animation: 5s ease-in-out mouv backwards;
+}
+.lien:active {
+    background-color: rgb(41, 41, 41);
+    box-shadow: inset 2px 2px 8px rgb(23, 23, 23);
+    color: white;
+    text-shadow: 1px 1px 2px rgb(19, 19, 19);
+}
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+}
+@media screen and (max-width: 650px) {
+    h1, h2 {
+        font-size: 1em;
+    }
+section, section:hover, section:active {
+    width: 90vw;
+}
+}
