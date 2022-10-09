@@ -20,12 +20,46 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     z-index: 1;
 }
 .accueil {
     margin-top: 5vh;
     height: 90vh;
+}
+div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 30em;
+    height: 90%;
+}
+input, textarea, button {
+    height: 2.2em;
+    width: 100%;
+    margin: 2%;
+    padding: 5%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 20px;
+    box-shadow: 1px 1px 66px 1px hsl(0, 0%, 83%),
+    -1px -1px 66px 1px hsl(0, 0%, 82%);
+}
+input[type="submit"] {
+    line-height: 0.5em;
+    height: 2em;
+}
+textarea {
+    height: 20vh; 
+    border-radius: 20px 20px 0 20px;
 }
 main {
     display: flex;
@@ -39,6 +73,16 @@ main {
 a {
     color: black;
     text-decoration: none;
+    background: transparent;
+}
+.img {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    background-size: contain;
 }
 .lien {
     display: flex;
@@ -69,6 +113,7 @@ a {
 .lien:nth-child(3) {
     background: url(CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/adrien_ferron_photographie-019.jpg);
     background-position: top;
+    filter: brightness(1.2);
 }
 .lien:nth-child(4) {
     background: url(Durant_une_des_Transmanches_2010/SCAN00717.jpg);
@@ -82,31 +127,9 @@ a {
     background: url(la_rose_vogue/SCAN00418.jpg);
     background-position: bottom;
 }
-@keyframes mouv {
-    from {
-        background-position: bottom;
-    }
-    to {
-        background-position: top;
-    }
-}
-img {
-    object-fit: contain;
-    max-width: 40%;
-    width: auto;
-    margin: 2%;
-    height: auto;
-    box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
-    -webkit-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
-    -moz-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
-    transition: 1s ease;
-}
-img:hover {
-    transform: scale(.9);
-}
 .lien:hover {
     width: 39.9vw;
-    filter: saturate(2);
+    filter: contrast(1.2) saturate(1.2);
     color: rgb(255, 255, 255);
     font-style: normal;
     animation: 5s ease-in-out mouv backwards;
@@ -117,17 +140,50 @@ img:hover {
     color: white;
     text-shadow: 1px 1px 2px rgb(19, 19, 19);
 }
+@keyframes mouv {
+    from {
+        background-position: bottom;
+    }
+    to {
+        background-position: top;
+    }
+}
+.photo {
+    object-fit: contain;
+    max-width: 100%;
+    width: auto;
+    margin: 2%;
+    height: auto;
+    transition: 1s ease;
+    background: transparent;
+    box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+    -moz-box-shadow: -1px -1px 84px 9px rgba(0,0,0,0.69);
+}
+.photo:hover {
+    transform: scale(.9);
+    box-shadow: -1px -1px 44px 4px rgba(0,0,0,0.89);
+    -webkit-box-shadow: -1px -1px 44px 4px rgba(0,0,0,0.89);
+    -moz-box-shadow: -1px -1px 44px 4px rgba(0,0,0,0.89);
+}
 footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
+    header {
+        height: 15vh;
+    }
     h1, h2 {
         font-size: 1em;
+        text-align: center;
+    }
+    h1 {
+        width: 70%;
     }
 section, section:hover, section:active {
     width: 90vw;
