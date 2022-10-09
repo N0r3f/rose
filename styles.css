@@ -59,27 +59,27 @@ a {
     z-index: 2;
 }
 .lien:first-child {
-    background: url(media/img/chantier_rose/SCAN0021.JPG);
+    background: url(chantier_rose/SCAN0021.JPG);
     background-position: center;
 }
 .lien:nth-child(2) {
-    background: url(media/img/CREDIT_ADRIEN_FERRON_operation_genara/-OP-Genara-1578.JPG);
+    background: url(CREDIT_ADRIEN_FERRON_operation_genara/-OP-Genara-1578.JPG);
     background-position: center;
 }
 .lien:nth-child(3) {
-    background: url(media/img/CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/adrien_ferron_photographie-019.jpg);
+    background: url(CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/adrien_ferron_photographie-019.jpg);
     background-position: top;
 }
 .lien:nth-child(4) {
-    background: url(media/img/Durant_une_des_Transmanches_2010/SCAN00717.jpg);
+    background: url(Durant_une_des_Transmanches_2010/SCAN00717.jpg);
     background-position: center;
 }
 .lien:nth-child(5) {
-    background: url(media/img/grutage_rose/SCAN0030.JPG);
+    background: url(grutage_rose/SCAN0030.JPG);
     background-position: center;
 }
 .lien:nth-child(6) {
-    background: url(media/img/la_rose_vogue/SCAN00418.jpg);
+    background: url(la_rose_vogue/SCAN00418.jpg);
     background-position: bottom;
 }
 @keyframes mouv {
