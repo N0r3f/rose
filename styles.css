@@ -102,7 +102,7 @@ img {
     transition: 1s ease;
 }
 img:hover {
-    transform: scale(1.1);
+    transform: scale(.9);
 }
 .lien:hover {
     width: 39.9vw;
