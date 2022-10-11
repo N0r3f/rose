@@ -107,12 +107,11 @@ a {
     background-position: center;
 }
 .lien:nth-child(2) {
-    background: url(CREDIT_ADRIEN_FERRON_operation_genara/IMG_1587.JPG);
-    background-size: 800px;
+    background: url(CREDIT_ADRIEN_FERRON_operation_genara/min_IMG_1587.JPG);
     background-position: center;
 }
 .lien:nth-child(3) {
-    background: url(CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/adrien_ferron_photographie-019.jpg);
+    background: url(CREDIT_ADRIEN_FERRON_rose_of_argyll_transmanche/min_adrien_ferron_photographie_026.jpg);
     background-position: top;
     filter: brightness(1.2);
 }
