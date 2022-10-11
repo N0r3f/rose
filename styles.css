@@ -108,6 +108,7 @@ a {
 }
 .lien:nth-child(2) {
     background: url(CREDIT_ADRIEN_FERRON_operation_genara/IMG_1587.JPG);
+    background-size: 800px;
     background-position: center;
 }
 .lien:nth-child(3) {
