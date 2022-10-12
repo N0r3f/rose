@@ -28,15 +28,6 @@ header {
 header:hover {
     opacity: 100%;
 }
-div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
-    width: 100vw;
-    height: 90vh;
-}
 form {
     display: flex;
     flex-flow: column nowrap;
@@ -48,7 +39,7 @@ form {
 input, textarea, button {
     height: 2.2em;
     width: 100%;
-    margin: 2%;
+    margin: 2% 20px 2% 20px;
     padding: 5%;
     border: 1px solid rgb(41, 41, 41);
     border-radius: 20px;
@@ -63,7 +54,7 @@ textarea {
     height: 20vh; 
     border-radius: 20px 20px 0 20px;
 }
-main {
+main, div {
     display: flex;
     flex-flow: row wrap;
     align-items: space-around;
@@ -73,13 +64,13 @@ main {
     height: auto;
     z-index: 0;
 }
+div {
+    margin: 2% 20px 2% 20px;
+}
 a {
     color: black;
     text-decoration: none;
     background: transparent;
-}
-footer {
-    
 }
 h3:before {
     content: ' \0000A0 ⛵ \0000A0 \0000A0';
@@ -104,37 +95,6 @@ h3:after {
 h3:hover {
     animation: 1s ease-in-out zoom forwards;
 }
-@keyframes zoom {
-    from {
-        font-size: 0.8em; 
-        border-image: 
-        linear-gradient(
-          to bottom, 
-          transparent, 
-          transparent,
-          hsl(0, 0%, 12%)
-          ) 1 1% 10%;
-    }
-    50% {
-    backface-visibility: hidden;
-    filter: blur(0);
-        border-image: 
-    linear-gradient(
-      to bottom, 
-      transparent, 
-      transparent,
-      hsl(0, 0%, 12%)
-      ) 1 1% 50%;
-      padding: 3% 5% 2% 5%;
-    }
-    to {
-        font-size: 1em;
-        border: 3px;
-        font-style: normal;
-        padding: 1% 3% 1% 3%;
-        text-shadow: 2px 2px 20px rgb(56, 56, 56);
-    }
-}
 .img {
     display: flex;
     flex-flow: column nowrap;
@@ -152,7 +112,7 @@ h3:hover {
     border-radius: 20px;
     background-color: rgb(238, 238, 238);
     box-shadow: 2px 2px 8px black;
-    margin: 0 60px 0 0;
+    margin: 20px 20px 20px 20px;
     color: rgb(245, 242, 242);
     text-shadow: 2px 2px 10px rgb(10, 10, 10),
     -2px -2px 10px rgb(10, 10, 10);
@@ -200,14 +160,6 @@ h3:hover {
     color: white;
     text-shadow: 1px 1px 2px rgb(19, 19, 19);
 }
-@keyframes mouv {
-    from {
-        background-position: bottom;
-    }
-    to {
-        background-position: top;
-    }
-}
 .photo {
     object-fit: contain;
     max-width: 100%;
@@ -234,6 +186,45 @@ footer {
     padding-bottom: 1%;
     width: 100vw;
     height: 22vh;
+}
+@keyframes mouv {
+    from {
+        background-position: bottom;
+    }
+    to {
+        background-position: top;
+    }
+}
+@keyframes zoom {
+    from {
+        font-size: 0.8em; 
+        border-image: 
+        linear-gradient(
+          to bottom, 
+          transparent, 
+          transparent,
+          hsl(0, 0%, 12%)
+          ) 1 1% 10%;
+    }
+    50% {
+    backface-visibility: hidden;
+    filter: blur(0);
+        border-image: 
+    linear-gradient(
+      to bottom, 
+      transparent, 
+      transparent,
+      hsl(0, 0%, 12%)
+      ) 1 1% 50%;
+      padding: 3% 5% 2% 5%;
+    }
+    to {
+        font-size: 1em;
+        border: 3px;
+        font-style: normal;
+        padding: 1% 3% 1% 3%;
+        text-shadow: 2px 2px 20px rgb(56, 56, 56);
+    }
 }
 @media screen and (max-width: 850px) {
     header {
